@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+table {
+    --color1: #dbdbdb;
+    --color2: #e7e7e7;
+    --color3: #fcfcfc;
+    
+    width: 100%;
+    text-align: center; 
+    border-collapse: collapse;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+    padding: 18px; 
+} 
+
+thead {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+p{
+    font-size: 1.8em; 
+    margin-bottom: 0px;  
+}
+thead:nth-child(1){
+    background-color: rgb(179, 207, 255);
+}
+
+thead>tr>td:nth-child(2){
+    background-color: rgb(119, 154, 214);
+}
+
+thead>tr>td:nth-child(3){
+    background-color: rgb(77, 107, 158);
+}
+
+thead>tr>td:nth-child(4){
+    background-color: rgb(57, 82, 124);
+}
+
+thead>tr>td:nth-child(5){
+    background-color: rgb(26, 53, 99);
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(odd),
+tfoot>tr > td:nth-child(odd)
+{
+    background-color: var(--color1);
+}
+
+tbody>tr:nth-child(even) > td:nth-child(odd),
+tbody>tr:nth-child(odd) > td:nth-child(even),
+tfoot>tr > td:nth-child(even){
+    background-color: var(--color2);
+}
+
+tbody>tr:nth-child(even) > td:nth-child(even)
+{
+    background-color: var(--color3);
+}
+
+button{
+    padding: 2px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
